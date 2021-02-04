@@ -37,11 +37,13 @@ body
 .wrapper .form
 {
     width: 100%;
+    /*padding: 30px 40px;*/
 }
 
 .wrapper .form .input_field
 {
     margin-bottom: 15px;
+    padding-bottom: 15px;
     display: flex;
     align-items: center;
 }
@@ -191,3 +193,49 @@ Buttons*/
 .wrapper .form .input_field:last-child{
     margin-bottom: 0;
   }
+
+
+.wrapper .form .input_field i
+{
+    visibility: hidden;
+    position: absolute;
+    right:440px;
+}
+
+.wrapper .form .input_field small
+{
+    visibility: hidden;
+    position: absolute;
+    bottom: 400px;
+    
+}
+
+.wrapper .form .input_field.success input
+{
+    border-color: rgb(50, 207, 50);
+}
+
+.wrapper .form .input_field.success i.fa-check-square
+{
+    color: rgb(50, 207, 50);
+    visibility: visible;
+}
+
+.wrapper .form .input_field.error input
+{
+    border-color: rgb(230, 42, 42);
+}
+
+.wrapper .form .input_field.error i.fa-exclamation-triangle
+{
+    color: rgb(230, 42, 42);
+    visibility: visible;
+}
+
+/*
+.wrapper .form .input_field.error small
+{
+    color: rgb(230, 42, 42);
+    visibility: visible;
+}
+*/
