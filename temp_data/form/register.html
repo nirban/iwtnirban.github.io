@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css"> 
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <script src="validate.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="title">
+                Registration Form
+            </div>
+            
+            <form class="form" id="form" name="myForm" > <!--onsubmit="return(checkInputs());" > -->
+                <div class="input_field">
+                    <label for="">First Name</label>
+                    <input class="input" type="text" name="firstName" placeholder="First Name" id="firstName"> 
+
+                    <i class="fas fa-check-square"></i>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="input_field">
+                    <label for="">Last Name</label>
+                    <input class="input" type="text" name="" placeholder="Last Name" id="lastName">
+
+                    <i class="fas fa-check-square"></i>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="input_field">
+                    <label for="">Username</label>
+                    <input class="input" type="text" name="" placeholder="username" id="userName">
+
+                    <i class="fas fa-check-square"></i>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="input_field">
+                    <label for="">Password</label>
+                    <input class="input" type="password" name="" placeholder="password" id="password">
+                    
+                    <i class="fas fa-check-square"></i>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="input_field">
+                    <label for="">Confirm Password</label>
+                    <input class="input" type="password" name="" placeholder="confirm Password" id="confPassword">
+
+                    <i class="fas fa-check-square"></i>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="input_field">
+                    <label for="">Gender</label>
+                    <div class="custom_radio">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <div class="input_field">
+                    <label for="">Course</label>
+                    <div class="custom_select">
+                        <select name="" id="">
+                            <option value="">Select Option</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="M.Sc">M.Sc</option>
+                            <option value="MCA">MCA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input_field">
+                    <label for="">E-Mail Address</label>
+                    <input class="input" type="email" name="" id="email">
+
+                    <i class="fas fa-check-square"></i>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="input_field">
+                    <label for="">Phone Number</label>
+                    <input class="input" type="text" name="" id="phoneNum" value="+91 ">
+
+                    <i class="fas fa-check-square"></i>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="input_field">
+                    <label for="">Address</label>
+                    <textarea class="textarea" name="" id=""></textarea>
+                </div>
+
+                <div class="input_field terms">
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>All the details are True and Valid</p>
+                </div>
+
+                <div class="input_field">
+                    <input type="submit" value="Register" class="btn" id="regBtn">
+                </div>
+
+                <div class="input_field">
+                    <input type="reset" value="Reset" class="btn">
+                </div>
+            </form>        
+        </div>
+
+    </body>
+
+</html>
